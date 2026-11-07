@@ -1,0 +1,61 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/kirios/install-plan.schema.json",
+  "title": "KiriOS InstallPlan v1",
+  "description": "Data validation only; executor MUST independently re-identify physical disk and require typed confirmation.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "release", "target", "disk", "account", "features"],
+  "properties": {
+    "schemaVersion": {"const": 1},
+    "release": {
+      "type": "object", "additionalProperties": false,
+      "required": ["gitRevision", "flakeLockSha256"],
+      "properties": {
+        "gitRevision": {"type": "string", "minLength": 7, "maxLength": 64},
+        "flakeLockSha256": {"type": "string", "minLength": 32}
+      }
+    },
+    "target": {
+      "type": "object", "additionalProperties": false,
+      "required": ["hostProfile", "architecture", "uefi"],
+      "properties": {
+        "hostProfile": {"enum": ["xps", "thinkstation", "arm-vm", "vm-test"]},
+        "architecture": {"enum": ["x86_64-linux", "aarch64-linux"]},
+        "uefi": {"const": true}
+      }
+    },
+    "disk": {
+      "type": "object", "additionalProperties": false,
+      "required": ["byIdPath", "sizeBytes", "erase", "filesystem", "encryption"],
+      "properties": {
+        "byIdPath": {"type": "string", "pattern": "^/dev/disk/by-id/[^/]+$"},
+        "model": {"type": "string", "maxLength": 128},
+        "serial": {"type": ["string", "null"], "maxLength": 128},
+        "sizeBytes": {"type": "integer", "minimum": 8589934592},
+        "erase": {"const": true},
+        "filesystem": {"const": "btrfs"},
+        "encryption": {"enum": ["luks2", "none"]}
+      }
+    },
+    "account": {
+      "type": "object", "additionalProperties": false,
+      "required": ["username", "hostname", "locale", "timezone"],
+      "properties": {
+        "username": {"type": "string", "pattern": "^[a-z_][a-z0-9_-]{0,31}$"},
+        "hostname": {"type": "string", "pattern": "^[a-z0-9][a-z0-9-]{0,62}$"},
+        "locale": {"type": "string", "minLength": 2},
+        "timezone": {"type": "string", "minLength": 3}
+      }
+    },
+    "features": {
+      "type": "object", "additionalProperties": false,
+      "required": ["desktop", "developer", "gaming"],
+      "properties": {
+        "desktop": {"type": "boolean"},
+        "developer": {"type": "boolean"},
+        "gaming": {"type": "boolean"}
+      }
+    }
+  }
+}

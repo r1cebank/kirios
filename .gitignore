@@ -1,0 +1,13 @@
+# macOS metadata
+.DS_Store
+
+# Local Nix outputs and development environment
+/result
+/result-*
+/.direnv/
+
+# Rust build output
+/target/
+
+# Local ISO, virtual-disk and test artifacts
+/artifacts/

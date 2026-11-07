@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "timestamp": "2026-10-12T22:00:00+09:00",
+  "source": "mock",
+  "hardware": {"architecture": "x86_64-linux", "platform": "laptop", "gpu": "unknown"},
+  "policy": {
+    "requestedMode": "auto",
+    "effectiveMode": "balanced",
+    "reason": "on-ac-no-active-game",
+    "gameOverridePermitted": true,
+    "activeGameModeClients": 0,
+    "overrideExpiresAt": null
+  },
+  "capabilities": {
+    "supportedModes": ["eco", "balanced", "performance", "auto"],
+    "cpuPowerControl": true,
+    "gpuTelemetry": false,
+    "batteryTelemetry": true,
+    "gpuPowerControl": false
+  },
+  "sensors": {
+    "cpuUsagePercent": 14.0,
+    "cpuTempC": 58.0,
+    "cpuFrequencyMHz": 3100,
+    "memoryUsedBytes": 19542101196,
+    "memoryTotalBytes": 68719476736,
+    "gpuUsagePercent": null,
+    "gpuTempC": null,
+    "batteryPercent": 78,
+    "onAcPower": true
+  },
+  "warnings": ["GPU telemetry provider unavailable"]
+}

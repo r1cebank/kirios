@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "ok": true,
+  "requestId": "example-001",
+  "data": {
+    "hostname": "vm-test",
+    "system": "x86_64-linux",
+    "nixosRelease": "26.05",
+    "configurationRevision": "0123456789abcdef",
+    "generation": 11,
+    "activeProfiles": ["base", "desktop", "developer"],
+    "syncedHomeRevision": null,
+    "performanceMode": "balanced"
+  },
+  "warnings": []
+}

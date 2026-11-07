@@ -1,0 +1,29 @@
+# Proposed user-facing schema, NOT a native NixOS configuration.
+# The implementation MUST validate fields against a strict schema before generating Nix.
+schemaVersion: 1
+system:
+  hostProfile: xps                  # xps | thinkstation | arm-vm | vm-test
+  baseRelease: "26.05"
+  locale: en_US.UTF-8
+  timezone: Asia/Tokyo
+features:
+  desktop: true
+  development: true
+  gaming: false                   # x86_64 only when GPU capability confirmed
+  performanceCenter: true
+  gamescopeSession: false         # opt in and GPU-tested
+home:
+  provider: git                   # git | local | none
+  remote: null                    # never embed private auth tokens
+  branch: main
+  restorePreferences: true
+  restoreEncryptedSecrets: false
+appearance:
+  theme: default-dark
+  accent: "#39C5BB"
+  reducedMotion: false
+performance:
+  mode: auto                       # auto | eco | balanced | performance
+  allowGameOverrides: true
+  samplingVisibleSeconds: 1
+  samplingHiddenSeconds: 5

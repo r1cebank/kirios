@@ -1,0 +1,172 @@
+{
+  "title": "KiriOS: Agent Build Pack",
+  "version": "1.1.0-spec",
+  "created": "2026-10-12",
+  "rebranded": "2026-10-13",
+  "project": "KiriOS",
+  "namespace": "kirios",
+  "cli": "kirictl",
+  "scope": "specifications and contracts, not executable distribution",
+  "files": [
+    {
+      "path": "AGENTS.md",
+      "bytes": 4370,
+      "sha256": "8186674138612f36b874db30636e8501f5f00ccfe3f252621a553859227ea102"
+    },
+    {
+      "path": "README.md",
+      "bytes": 5469,
+      "sha256": "f8275ed867f0845b00335cdc0b56556ecfe1851c712fc0863f3c15cbf2969113"
+    },
+    {
+      "path": "agent-prompts/00-kickoff.md",
+      "bytes": 2006,
+      "sha256": "fcb98e45c181dc80d67642d9ada0491db3e42a9e39573262b49beae67ec190bd"
+    },
+    {
+      "path": "agent-prompts/01-desktop-sync.md",
+      "bytes": 1051,
+      "sha256": "5f70aab039ace780063729b07e344e087b174cfe37f7fedc59b962d287c3934d"
+    },
+    {
+      "path": "agent-prompts/02-cli-performance.md",
+      "bytes": 1154,
+      "sha256": "ab1458274e1f18d67052aa1bd724edddc6c89f427a69fb9340a8878062815ff2"
+    },
+    {
+      "path": "agent-prompts/03-gaming-hardening.md",
+      "bytes": 1141,
+      "sha256": "f1fdd79eb05e032c5163000482f50cdd1a3ead85c82f4aab4369d3d44859db1f"
+    },
+    {
+      "path": "contracts/install-plan.schema.json",
+      "bytes": 2445,
+      "sha256": "47555f0021fdff61fbbc8cf57efe8347a45b11985488e967f7526bfe5a82f426"
+    },
+    {
+      "path": "contracts/installer-flow.md",
+      "bytes": 1112,
+      "sha256": "8243a1cf1653f3f0ea03154670e4c02891da14a2987ddc4b2a066fc639e9dbc1"
+    },
+    {
+      "path": "contracts/kirictl-status.example.json",
+      "bytes": 383,
+      "sha256": "73688cde7143a7d5b31b49b857ea81493d9bebb113396db89b40e7a3e4a1c2c4"
+    },
+    {
+      "path": "contracts/performance-dbus.md",
+      "bytes": 1979,
+      "sha256": "c3562b21b8504a1ce88397950c09933e438248f8ab222ff979ddee47cbe6bd75"
+    },
+    {
+      "path": "contracts/performance-status.example.json",
+      "bytes": 925,
+      "sha256": "46b91a1a247bb6d83fc04a1619cb8b7b320419557dcf2ccc0b0ff821e327bc85"
+    },
+    {
+      "path": "contracts/profile.example.yaml",
+      "bytes": 980,
+      "sha256": "cc25a7b823eee92c8c76148b282a30f72d04b69adbd1c62e80276dfc4476ef87"
+    },
+    {
+      "path": "docs/00-product-and-decisions.md",
+      "bytes": 4618,
+      "sha256": "0d7373ca1ca698796ffb44f889daddf5c5d83200e80526fd4bb08ac0f0fe6632"
+    },
+    {
+      "path": "docs/01-architecture.md",
+      "bytes": 4649,
+      "sha256": "e6978002a1e9d7f87a3a36b23c1338959ab55f7d682240f527cc7c7abf8d3d7e"
+    },
+    {
+      "path": "docs/02-flake-and-repository.md",
+      "bytes": 3785,
+      "sha256": "8481a627270efa5358c1ef49a14eb7f72abe51715897635e60e1df5089f41340"
+    },
+    {
+      "path": "docs/03-iso-and-installer.md",
+      "bytes": 5699,
+      "sha256": "c3d727bb88dfbac3710b7feb382e1c5721cd5a633a5a09a4caa8c0bdcca1b2c1"
+    },
+    {
+      "path": "docs/04-disk-and-recovery.md",
+      "bytes": 3007,
+      "sha256": "355ce32d1e0a175b8488fed46478a7acdc70e41930834c8876bb2759b0004f47"
+    },
+    {
+      "path": "docs/05-hardware-and-platforms.md",
+      "bytes": 3326,
+      "sha256": "a960306e61f61ecc601df45f181695cd1dbc1eaf1342f54b363ea46e41b7a0cc"
+    },
+    {
+      "path": "docs/06-desktop-and-theme.md",
+      "bytes": 3095,
+      "sha256": "22f04e4ae3bd6ae7e25dd2ce4603bf30782403a4b64ba5aac7a7b07b6bc44b0e"
+    },
+    {
+      "path": "docs/07-home-sync-and-secrets.md",
+      "bytes": 5147,
+      "sha256": "2de0b4c5e643711f7a053971e831fd771e4c91741ac8c3dc5bc4678fcf8460f0"
+    },
+    {
+      "path": "docs/08-kirictl-cli-and-config.md",
+      "bytes": 4413,
+      "sha256": "86df6c511a66ad38e79a4c3ecfdb4e1c71e5e3828f5514e59b9f0968cb199c02"
+    },
+    {
+      "path": "docs/09-performance-center.md",
+      "bytes": 3655,
+      "sha256": "510c53410c3a22e3bae810e65de82cda4b1b6a5c3729560075b8e805d767d77d"
+    },
+    {
+      "path": "docs/10-performance-engine.md",
+      "bytes": 3868,
+      "sha256": "e9367e93d47d6885e83066aa690c504877ffe7bd7671f3df82699234a9d925f5"
+    },
+    {
+      "path": "docs/11-gaming-stack.md",
+      "bytes": 4070,
+      "sha256": "aa347727d680d02eba757574ae1d6cbb43597f0221bdbc29489d0d16ffe6edea"
+    },
+    {
+      "path": "docs/12-developer-experience.md",
+      "bytes": 4222,
+      "sha256": "e9164e0943e4f618a90b7e240f5e511b1a031cdb3590dd2d92ca3e38d2b8e1b2"
+    },
+    {
+      "path": "docs/13-updates-and-security.md",
+      "bytes": 3275,
+      "sha256": "e18270d440402dae75ed3112dab3c32b07a12198f5e0188f9e45b60045a26ede"
+    },
+    {
+      "path": "docs/14-test-plan.md",
+      "bytes": 4139,
+      "sha256": "c5c6e9d9bc58964042b92e5badd08163c5e69920f8850071258e39896e5531f3"
+    },
+    {
+      "path": "docs/15-delivery-roadmap.md",
+      "bytes": 6308,
+      "sha256": "a0b81b3138b3d8dd724b76e5e7aa762ab907949fa990a38b203e8aed8dbd2846"
+    },
+    {
+      "path": "docs/16-agent-workflow.md",
+      "bytes": 2382,
+      "sha256": "a8a99d8bd15f6703887cd065b9ccb74d0604b7902d21cfd2fbe36ee9d6dc84bf"
+    },
+    {
+      "path": "docs/17-sources-and-verification.md",
+      "bytes": 3676,
+      "sha256": "a58bc8478a3e10aa9f7f277666ab1eb845bd6dec5200cc5dd9f1c4a0fb594e5d"
+    },
+    {
+      "path": "docs/18-personal-profile-integration.md",
+      "bytes": 4060,
+      "sha256": "30c8d46d174e8a67feb68a3d14101b145ca7bdb0670811937b175a16ba8c0b8b"
+    },
+    {
+      "path": "docs/19-brand-and-naming.md",
+      "bytes": 3829,
+      "sha256": "7d478649bb117f86ca7c05bbfa3fd28f5054cc588d9ada813284be2056cb5b4d"
+    }
+  ]
+}
